@@ -4,6 +4,8 @@
 
 A small native macOS app for converting HEIC images to PNG or JPG. Built with Swift and AppKit, with no third-party dependencies.
 
+<p align="center"><img src="docs/images/app-screenshot.jpg" width="380" alt="HEIC Drop macOS window with PNG and JPG selection, an image drop area, and Choose, Copy, and Save buttons"></p>
+
 ## Use
 
 1. Install the `.pkg` into Applications and open **HEIC Drop**.
