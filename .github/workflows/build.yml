@@ -1,0 +1,15 @@
+name: Build
+on:
+  push:
+  pull_request:
+jobs:
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/test.sh
+      - run: ./scripts/build.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HEICDrop-installer
+          path: build/HEICDrop-*.pkg
